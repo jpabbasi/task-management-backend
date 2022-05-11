@@ -3,9 +3,12 @@
 
 ## Tech
 - Nestjs
-- uuid (v4)
+- uuid
 - Class-Validator
 - TypeORM
+- pg
+- ckey
+- class-transformer
 
 ## Description
 This is a task manager nestjs app.
