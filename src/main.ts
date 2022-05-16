@@ -2,7 +2,7 @@ import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
-const env = require('ckey') // ckey is used here to access .env file.
+const env = require('ckey'); // ckey is used here to access .env file.
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
