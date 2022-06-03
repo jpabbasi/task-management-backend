@@ -1,15 +1,15 @@
-import { ValidationPipe } from '@nestjs/common';
+import { Logger, ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { TransformInterceptor } from './transform.interceptor';
 
-const env = require('ckey'); // ckey is used here to access .env file.
-
 async function bootstrap() {
+  const logger = new Logger();
   const app = await NestFactory.create(AppModule);
   app.useGlobalPipes(new ValidationPipe());
   app.useGlobalInterceptors(new TransformInterceptor());
-  await app.listen(env.APP_PORT);
-  console.log('🚀 App started.');
+  const port = 3000;
+  await app.listen(port);
+  logger.log(`🚀 App started on port ${port}`);
 }
 bootstrap();

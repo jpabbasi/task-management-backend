@@ -7,7 +7,6 @@
 - Class-Validator
 - TypeORM
 - pg
-- ckey
 - class-transformer
 
 ## Description
