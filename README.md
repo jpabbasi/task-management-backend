@@ -3,11 +3,7 @@
 
 ## Tech
 - Nestjs
-- uuid
-- Class-Validator
 - TypeORM
-- pg
-- class-transformer
 
 ## Description
 This is a task manager nestjs app.
